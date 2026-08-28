@@ -1,0 +1,100 @@
+html{
+    font-size: 62.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Header  */
+
+.menu{
+    width: 100%;   /*Change to max-width: 100.8rem; */
+    height: 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#0c2842;
+    position:fixed;
+    z-index: 999;
+    padding: 0rem 2rem;
+}
+
+/* Header -> Logo */
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo a{
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Header -> Navbox-left & right*/
+
+.navbox ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbox ul li a{
+    display: block;
+    font-size: 1.4rem;
+    color:#cbf8ff;
+    padding: 0.2rem 1rem ;
+    /* background-color: red; */
+}
+
+.navbox ul li a span{
+    padding-left: 0.8rem ;
+}
+
+.right_box ul li:first-child{
+    border-left: 1px solid #abdafc;
+    padding-left: 3rem ;
+}
+
+/* Header -> form -> input */
+
+form{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+input[type=text]{
+    width: 28rem;
+    color:#cbf8ff;
+    background-color: rgba(39, 73, 111, 0.8);
+    background-image: url('asset/search.svg');
+    background-repeat: no-repeat;
+    background-position: left center ;
+    padding:0.8rem 1rem 0.8rem  3.5rem;
+    outline-style: none;
+    border:none;
+    border-radius: 0.8rem;
+    margin-right: 3rem;
+}
