@@ -4,39 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anonymous</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="menu">
-      <div class="logo">
-        <a href="index.html" title="Home"
-          ><img
-            src="asset/micro_logo.svg"
-            alt="Embedded System logo"
-           width="35" height="35"/>Embedded Systems</a
-        >
+    <header class="header">
+      <div class="header_left">
+        <div class="header_logo">
+          <a href="index.html"
+            ><img src="asset/micro_logo.svg" alt="Embedded System logo" /><span
+              >Embedded Systems</span
+            ></a
+          >
+        </div>
+        <div class="header_explore">
+          <ul>
+            <li>
+              <a href="#">Learn<span>&#x25BE;</span></a>
+            </li>
+            <li>
+              <a href="#">Build<span>&#x25BE;</span></a>
+            </li>
+            <li>
+              <a href="#">Explore<span>&#x25BE;</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="navbox right_box">
-        <ul>
-            <li><a href="#">Learn<span>&#x25BE;</span></a></li>
-            <li><a href="#">Build<span>&#x25BE;</span></a></li>
-            <li><a href="#">Explore<span>&#x25BE;</span></a></li>
-        </ul>
-      </nav>
-      <form action="#" method="get" target="_self">
-        <label for="search"></label>
-        <input type="text" name="search" id="search" placeholder="Search topics..." value="">
-      </form>
-      <nav class="navbox">
-        <ul>
+      <div class="header_right">
+        <form action="#" method="get">
+          <label for="search" class="visually_hidden">Search</label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search topics..."
+            value=""
+          />
+        </form>
+        <nav class="header_nav">
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Aside Section -->
+
+    <aside class="sidebar">
+      <nav class="sidebar_topics" aria-label="Main Topics">
+        <h2>Main Topics</h2>
+        <ul>
+          <li>
+            <a class="active" href="#">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Introduction</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Microcontrollers & Boards</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>GPIO</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>PWM</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Communication Protocols</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Sensors & Actuators</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Interrupts & Timers</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Memory & Storage</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>RTOS</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Embedded C / C++</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>Projects</a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="20,0 0,20 5,20 5,38 15,38 15,25 25,25 25,38 35,38 35,20 40,20"
+                  fill="#ffffff"
+                  stroke="none"
+                /></svg>FAQs</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </aside>
   </body>
 </html>
