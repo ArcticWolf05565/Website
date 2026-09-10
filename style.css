@@ -156,18 +156,20 @@ input[type="text"]:focus{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #ffffff;
     border-radius: 0.5rem;
     padding: 0.8rem 1rem;
     white-space: nowrap;
+    transition: all ease 100ms;
 }
 
 .sidebar_topics ul li a svg{
     width: 1.8rem;
     height: 1.8rem;
+    object-fit: cover;
 }
 
 .sidebar_topics ul li .active{
